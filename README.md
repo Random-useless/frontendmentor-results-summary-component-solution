@@ -11,7 +11,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ## Screenshot
 
-![](./screenshot.jpg)
+![](https://raw.githubusercontent.com/Random-useless/frontendmentor-results-summary-component-solution/main/Screenshot.jpg)
 
 ## Links
 
