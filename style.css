@@ -1,0 +1,218 @@
+/*
+  - Use "border-box" box-sizing model.
+  - Remove default padding and margin.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS variables */
+
+:root {
+  /* Primary */
+
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  --Light-red-transparent: hsla(0, 100%, 67%, 0.1);
+  --Orangey-yellow-transparent: hsla(39, 100%, 56%, 0.1);
+  --Green-teal-transparent: hsla(166, 100%, 37%, 0.1);
+  --Cobalt-blue-transparent: hsla(234, 85%, 45%, 0.1);
+
+  /* Gradients */
+
+  --bg-gradient: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  --circle-gradient: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+
+  /* Neutral */
+
+  --clr-White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+/* Styles */
+
+p,
+span,
+div {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+html {
+  font-family: "Hanken Grotesk", sans-serif;
+  min-height: 100%;
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.result {
+  background: var(--bg-gradient);
+  color: var(--Light-lavender);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 32px 32px;
+}
+
+.result-title {
+  font-size: 1.25rem;
+  padding: 1em 0;
+}
+
+.result-rating {
+  background: var(--circle-gradient);
+  color: var(--Light-lavender);
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-rating span {
+  color: var(--clr-White);
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.result-rmk {
+  color: var(--clr-White);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5em 0;
+  margin-top: 0.5rem;
+}
+
+.result-comment {
+  padding: 0 2.5em;
+  margin-bottom: 2rem;
+}
+
+.summary {
+  padding: 1.75rem;
+}
+
+.summary-title {
+  color: var(--Dark-gray-blue);
+  font-size: 1.4rem;
+}
+
+.summary-list {
+  list-style-type: none;
+}
+
+.summary-list li {
+  margin-top: 1rem;
+  padding: 1em;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-list li .category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.summary-list li .rate {
+  color: var(--Dark-gray-blue);
+}
+
+.summary-list li .hundred {
+  color: var(--Light-lavender);
+}
+
+.summary-Reaction {
+  background-color: var(--Light-red-transparent);
+  color: var(--Light-red);
+}
+
+.summary-Memory {
+  background-color: var(--Orangey-yellow-transparent);
+  color: var(--Orangey-yellow);
+}
+
+.summary-Verbal {
+  background-color: var(--Green-teal-transparent);
+  color: var(--Green-teal);
+}
+
+.summary-Visual {
+  background-color: var(--Cobalt-blue-transparent);
+  color: var(--Cobalt-blue);
+}
+
+.btn-cnt {
+  border: none;
+  color: var(--clr-White);
+  background: var(--Dark-gray-blue);
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1em;
+  border-radius: 32px;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.btn-cnt:hover {
+  background: var(--bg-gradient);
+}
+
+/* Media query */
+
+@media (min-width: 560px) {
+  .wrapper {
+    flex-direction: row;
+    margin: 5rem auto;
+    margin-bottom: 1rem;
+    max-width: 800px;
+    box-shadow: var(--Pale-blue) 0px 3px 8px;
+    border-radius: 32px;
+  }
+  .result {
+    max-width: 400px;
+    border-radius: 32px;
+  }
+  .summary {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/*  Attribution styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1em;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
