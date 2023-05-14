@@ -56,6 +56,13 @@ html {
   position: relative;
 }
 
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
