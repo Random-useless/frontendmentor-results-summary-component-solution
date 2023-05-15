@@ -16,7 +16,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 ## Links
 
 - Solution URL: [Solution URL](https://github.com/Random-useless/frontendmentor-results-summary-component-solution)
-- Live Site URL: [Live site URL](https://random-useless.github.io/frontendmentor-results-summary-component-solution/)
+- Live Site URL: [Live site URL](https://web-dev-rafik.github.io/frontendmentor-results-summary-component-solution/)
 
 ## Built with
 
